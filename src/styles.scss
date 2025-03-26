@@ -1,1 +1,218 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap");
+
+$main-color: rgba(39, 39, 42, .5);;
+$second-color: rgb(156, 163, 175);
+$text-one: rgb(163, 163, 163);
+$main-font: "Inter", serif;
+$rating-color: #ffc908;
+
+body {
+    font-family: $main-font !important;
+    background-color: rgb(10 10 10 / 1);
+    box-shadow: inset 0 -20px 80px -40px #ffffff3f, 0 0 20px -5px hsla(0, 0%, 100%, .1);
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.text-second {
+    color: $text-one;
+}
+.bg-main {
+    background-color: $main-color;
+    color: $text-one;
+    padding: 8px 15px;
+}
+.btn-main {
+    background-color: #fff !important;
+    color: black !important;
+    font-size: 16px;
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+
+.my-photo {
+    width: 45%;
+    border-radius: 9999px ;
+    box-shadow: 0 0 0 2px rgb(63 63 70);
+    padding: 2px;
+    
+}
+.online-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.icon {
+    color: $second-color;
+    margin-right: 20px;
+}
+
+.bg-skills {
+    background-color: rgb(23 23 23 / 1);
+    color: rgb(212 212 212/1);
+    border-radius: 5px;
+}
+.nav-tabs{
+    .nav-link {
+        color: $text-one;
+        transition: none !important;
+    }
+    .nav-link.active{
+        background-color:transparent !important ;
+        border: 0 !important;
+        color: white;
+    }
+    .nav-link:hover{
+        border: 0 !important;
+    }
+    .nav-link.focus{
+        border: 0 !important;
+    }
+}
+.info .row p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.card {
+    border: none !important;
+    border-radius: 5px !important;
+}
+.card p {
+    border-radius: 5px !important;
+    color: rgb(212 212 212/1);
+    font-size: 12px;
+}
+.card-body {
+    box-shadow: inset 0 -20px 80px -40px #ffffff3f, 0 0 20px -5px hsla(0, 0%, 100%, .1);
+}
+.img-certifcate {
+    height: 250px;
+}
+.contact  i {
+    border-radius: 50%;
+    border: 2px solid $second-color;
+    padding: 15px;
+}
+
+.card-body {
+    background-color: #000;
+}
+@media (max-width: 992px) {
+    .tabs-titles {
+        display: none;
+    }
+    .projects {
+        .viewAll {
+            margin-right: auto;
+        }
+    }
+}
+@media (min-width: 992px) {
+    body {
+        background-color: black; /* خلفية سوداء */
+        background-image: 
+            linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+        background-size: 10px 10px; /* حجم الشبكة (يمكن تعديله) */
+    }
+    .container-fluid{
+        padding: 0;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0 ;
+        height: 100vh;
+        width: 20%;
+        padding: 0 20px;
+        background-color: rgb(24 24 27 / 1);
+        box-shadow: inset 0 -20px 80px -40px #ffffff3f,0 0 20px -5px hsla(0,0%,100%,.1);
+        .top-head .d-flex{
+            display: block !important;
+        }
+        .info .info-contnet {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .ring-1 {
+            display: flex;
+            justify-content: center;
+        }
+        h2 {
+            display: flex;
+            justify-content: center;
+        }
+        p {
+            text-align: center;
+        }
+        .location {
+            display: none;
+        }
+        .skills {
+            flex-wrap: wrap;
+            .col-4 {
+                flex: none;
+                width: inherit;
+            }
+            .bg-skills {
+                padding: 5px 10px;
+                background-color: $main-color;
+            }
+            i {
+                display: none;
+            }
+        }
+    }
+    .container-fluid {
+        display: flex;
+    }
+    .icons{
+        position: absolute;
+        bottom: 28px;
+        left: 37px;
+        border-top: 1px solid rgb(39 39 42);
+        a {
+            margin-right: 15px;
+            font-size: 20px;
+            background-color: $main-color;
+            padding: 4px 11px;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+    .navs-tabs {
+        position:absolute;
+        top: 0 ;
+        right: 8px;
+        width: 77%;
+        .nav-tabs {
+            display: none !important    ;
+        }
+        .tab-content {
+            margin: 30px 0;
+        }
+        .tabs-titles {
+            margin-bottom: 30px;
+        }
+        iframe {
+            height: 380px;
+        }
+        .tab-pane {
+            display: block !important;
+            transition: none !important;
+            padding-top: 30px;
+        }
+        .fade:not(.show) {
+            opacity: 1;
+        }
+        .img-certifcate {
+            height: 400px;
+        }
+    }
+}
