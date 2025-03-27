@@ -1,12 +1,12 @@
-<section class="home">
+<section class="home ">
     <div class="container-fluid">
         <div class="header pt-3">
             <div class="top-head d-flex justify-content-between">
-                <div class=" ring-1 m-3">
-                    <img src="../../../assets/1727666854579.jpg" alt
+                <div class=" ring-1 m-3" @slideFadeDown>
+                    <img src="../../../assets/priv-photo.png" alt
                         class=" my-photo">
                 </div>
-                <div class="icons">
+                <div class="icons" @slideFadeUp>
                     <div class="pt-4 d-flex align-items-center">
                         <a
                             href="https://www.linkedin.com/in/eslamzayed/"
@@ -29,11 +29,13 @@
                 </div>
             </div>
             <div class="info">
-                <div class="info-contnet">
-                    <h2 class="text-white">Eslam Zayed</h2>
-                    <p class="location text-second mb-1"><i class="fa-solid fa-location-dot fs-6"></i>
-                        Egypt</p>
-                    <p class="text-second">A Front-End Angular Developer with a strong foundation in building dynamic and responsive web applications</p>
+                <div class="info-contnet" >
+                    <div class="my-info" @slideFadeDown>
+                        <h2 class="text-white">Eslam Zayed</h2>
+                        <p class="location text-second mb-1"><i class="fa-solid fa-location-dot fs-6"></i>
+                            Egypt</p>
+                        <p class="text-second">A Front-End Angular Developer with a strong foundation in building dynamic and responsive web applications</p>
+                    </div>
                     <div class="d-flex align-items-center justify-content-center gap-4 bg-main rounded-pill  my-4">
                         <div class="d-flex justify-content-center  align-items-center gap-2">
                             <span class="online-dot bg-success"></span>
@@ -119,13 +121,13 @@
                     id="project-tab-pane" role="tabpanel"
                     aria-labelledby="project-tab" tabindex="0">
                     <div class="d-flex justify-content-between">
-                        <div class="tabs-titles mb-3">
+                        <div class="tabs-titles mb-3" @slideFadeDown>
                             <h2 class="text-white fw-bold">My Projects</h2>
                             <p class="text-second">I love building things. Here are a few of them.</p>
                         </div>
                         <p class="text-second cursor-pointer viewAll" routerLink="/projects">View All Project<i class="fa-solid fa-arrow-right ms-2"></i></p>
                     </div>
-                    <div class="row g-5">
+                    <div class="row g-5" @slideFadeUp>
                         <div class="col-md-6">
                             <div class="project overflow-hidden">
                                 <div class="card" >
@@ -246,6 +248,7 @@
                         <div class="col-6">
                             <div class="d-flex align-items-center flex-column icon m-0">
                                 <p class="text-second">Send me an Email</p>
+                                <p class="text-second">eslamzayed765&#64;gmail.com</p>
                                 <a href="mailto:eslamzayed765@gmail.com" target="_blank"><i class="fa-solid fa-envelope fs-1"></i></a>
                                 <!-- <i class="fa-solid fa-envelope fs-1"></i> -->
                             </div>
@@ -253,6 +256,7 @@
                         <div class="col-6">
                             <div class="d-flex align-items-center flex-column icon m-0">
                                 <p class="text-second">My Phone Number</p>
+                                <p class="text-second">+201092059096</p>
                                 <a href=""><i class="fa-solid fa-phone fs-1"></i></a>
                             </div>
                         </div>

@@ -11,10 +11,14 @@ body {
     font-family: $main-font !important;
     background-color: rgb(10 10 10 / 1);
     box-shadow: inset 0 -20px 80px -40px #ffffff3f, 0 0 20px -5px hsla(0, 0%, 100%, .1);
+    @extend .custom-cursor
 }
 a {
     color: inherit;
     text-decoration: none;
+}
+.custom-cursor {
+    cursor: url('./assets/arrowhead-3.png'), auto; /* Replace with your image path */
 }
 .cursor-pointer {
     cursor: pointer;
@@ -216,3 +220,4 @@ a {
         }
     }
 }
+
