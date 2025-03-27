@@ -219,5 +219,12 @@ a {
             height: 400px;
         }
     }
+    
+    .card , .ring-1 {
+        transition: all 0.7s;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
 }
 
