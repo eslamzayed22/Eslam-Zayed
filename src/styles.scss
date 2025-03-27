@@ -102,10 +102,16 @@ a {
     border: 2px solid $second-color;
     padding: 15px;
 }
-
+.card , .ring-1 {
+    transition: all 0.7s;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
 .card-body {
     background-color: #000;
 }
+
 @media (max-width: 992px) {
     .tabs-titles {
         display: none;
@@ -220,11 +226,5 @@ a {
         }
     }
     
-    .card , .ring-1 {
-        transition: all 0.7s;
-        &:hover{
-            transform: scale(1.05);
-        }
-    }
 }
 
