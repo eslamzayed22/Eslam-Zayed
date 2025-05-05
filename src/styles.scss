@@ -54,6 +54,10 @@ a {
 .icon {
     color: $second-color;
     margin-right: 20px;
+    transition: all 3s;
+    :hover{
+        transform: scale(1.5);
+    }
 }
 
 .bg-skills {
@@ -85,6 +89,10 @@ a {
 .card {
     border: none !important;
     border-radius: 5px !important;
+    transition: all 0.7s;
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 .card p {
     border-radius: 5px !important;
@@ -102,10 +110,10 @@ a {
     border: 2px solid $second-color;
     padding: 15px;
 }
-.card , .ring-1 {
-    transition: all 0.7s;
-    &:hover{
-        transform: scale(1.05);
+.ring-1 {
+    @extend .card;
+    &:hover {
+      transform: scale(1.2); // تغيير قيمة scale فقط
     }
 }
 .card-body {
@@ -174,9 +182,6 @@ a {
                 padding: 5px 10px;
                 background-color: $main-color;
             }
-            i {
-                display: none;
-            }
         }
     }
     .container-fluid {
@@ -195,6 +200,7 @@ a {
             color: white;
             border-radius: 5px;
         }
+        
     }
     .navs-tabs {
         position:absolute;
