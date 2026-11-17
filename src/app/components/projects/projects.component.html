@@ -3,32 +3,213 @@
         <div class="d-flex justify-content-between">
             <div class="tabs-titles mb-3" @slideFadeLeft>
                 <h2 class="text-white fw-bold">My Projects</h2>
-                <p class="text-second">I love building things. Here are a few of them.</p>
+                <p class="text-second">I love building things. Here are a few of
+                    them.</p>
             </div>
-            <p class="text-second cursor-pointer viewAll" routerLink="/home" @slideFadeRight>Back to Home<i class="fa-solid fa-arrow-right ms-2"></i></p>
+            <p class="text-second cursor-pointer viewAll" routerLink="/home"
+                @slideFadeRight>Back to Home<i
+                    class="fa-solid fa-arrow-right ms-2"></i></p>
         </div>
         <div class="row g-5">
             <div class="col-md-6">
                 <div class="project overflow-hidden " @slideFadeLeft>
-                    <div class="card" >
-                        <img src="../../../assets/globebuy.jpg" alt="" class="w-100">
+
+                    <div class="card">
+                        <img src="../../../assets/CevaStore.png"
+                            alt="Céva Studio E-commerce Website"
+                            class="project-image">
+
+                        <div class="card-body bg-black">
+
+                            <h5 class="card-title text-white">Céva Studio</h5>
+
+                            <p class="card-text">
+                                A modern full-stack e-commerce platform for
+                                fashion shopping,
+                                featuring product browsing, user authentication,
+                                shopping cart,
+                                checkout, and order management.
+                                Built with Angular, Node.js, Express, and
+                                MongoDB.
+                            </p>
+
+                            <div class="row g-1">
+
+                                <div class="col-4">
+                                    <p
+                                        class="bg-skills text-center m-0">Angular</p>
+                                </div>
+
+                                <div class="col-4">
+                                    <p
+                                        class="bg-skills text-center m-0">TypeScript</p>
+                                </div>
+
+                                <div class="col-4">
+                                    <p
+                                        class="bg-skills text-center m-0">Tailwind</p>
+                                </div>
+
+                                <div class="col-4">
+                                    <p
+                                        class="bg-skills text-center m-0">Node.js</p>
+                                </div>
+
+                                <div class="col-4">
+                                    <p
+                                        class="bg-skills text-center m-0">Express.js</p>
+                                </div>
+
+                                <div class="col-4">
+                                    <p
+                                        class="bg-skills text-center m-0">MongoDB</p>
+                                </div>
+
+                                <div class="col-4">
+                                    <p class="bg-skills text-center m-0">REST
+                                        API</p>
+                                </div>
+
+                            </div>
+
+                            <div class="links d-flex gap-2 my-3">
+
+                                <a class="btn-main bg-red"
+                                    href="https://cevastudio.vercel.app/home"
+                                    target="_blank">
+                                    <i class="fa-solid fa-globe"></i>
+                                    Website
+                                </a>
+
+                                <a class="btn-main bg-red"
+                                    href="https://github.com/eslamzayed22"
+                                    target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                    Source
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project overflow-hidden">
+                    <div class="card">
+
+                        <img src="../../../assets/TalabatAppApi.png"
+                            alt="TalabatAppApi Backend Project"
+                            class="project-image">
+
+                        <div class="card-body bg-black">
+
+                            <h5 class="card-title text-white">
+                                TalabatAppApi
+                            </h5>
+
+                            <p class="card-text">
+                                A food delivery backend API built
+                                with
+                                ASP.NET Core and Entity Framework
+                                Core.
+                                Designed to provide structured and
+                                scalable
+                                backend services for food ordering
+                                applications.
+                            </p>
+
+                            <div class="row g-1">
+
+                                <div class="col-4">
+                                    <p
+                                        class="bg-skills text-center m-0">
+                                        C#
+                                    </p>
+                                </div>
+
+                                <div class="col-4">
+                                    <p
+                                        class="bg-skills text-center m-0">
+                                        ASP.NET Core
+                                    </p>
+                                </div>
+
+                                <div class="col-4">
+                                    <p
+                                        class="bg-skills text-center m-0">
+                                        Web API
+                                    </p>
+                                </div>
+
+                                <div class="col-4">
+                                    <p
+                                        class="bg-skills text-center m-0">
+                                        EF Core
+                                    </p>
+                                </div>
+
+                                <div class="col-4">
+                                    <p
+                                        class="bg-skills text-center m-0">
+                                        SQL Server
+                                    </p>
+                                </div>
+
+                                <div class="col-4">
+                                    <p
+                                        class="bg-skills text-center m-0">
+                                        C# OOP
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="links d-flex gap-2 my-3">
+
+                                <a class="btn-main bg-red"
+                                    href="https://github.com/eslamzayed22/TalabatAppApi"
+                                    target="_blank">
+                                    <i
+                                        class="fa-brands fa-github"></i>
+                                    Source
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project overflow-hidden " @slideFadeLeft>
+                    <div class="card">
+                        <img src="../../../assets/globebuy.jpg" alt
+                            class="project-image">
                         <!-- <iframe src="https://globebuy.vercel.app/home"  
                         width="100%" height="200px"></iframe> -->
                         <div class="card-body bg-black ">
                             <h5 class="card-title text-white">GlobeBuy</h5>
-                            <p class="card-text">This is a dynamic and responsive front-end full e-commerce platform developed using Angular.</p>
+                            <p class="card-text">This is a dynamic and
+                                responsive front-end full e-commerce platform
+                                developed using Angular.</p>
                             <div class="row g-1">
                                 <div class="col-4">
-                                    <p class="bg-skills text-center m-0"> Angular</p>
+                                    <p class="bg-skills text-center m-0">
+                                        Angular</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="bg-skills text-center m-0">TypeScript</p>
+                                    <p
+                                        class="bg-skills text-center m-0">TypeScript</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="bg-skills text-center m-0 ">Bootstrap</p>
+                                    <p
+                                        class="bg-skills text-center m-0 ">Bootstrap</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="bg-skills text-center  m-0">Sass</p>
+                                    <p
+                                        class="bg-skills text-center  m-0">Sass</p>
                                 </div>
                             </div>
                             <div class="links d-flex gap-2 my-3 ">
@@ -40,7 +221,8 @@
                                 <a class="btn-main bg-red"
                                     href="https://github.com/eslamzayed22/GlobeBuy"
                                     target="_blank"><i
-                                        class="fa-brands fa-github"></i> Source</a>
+                                        class="fa-brands fa-github"></i>
+                                    Source</a>
                             </div>
                         </div>
                     </div>
@@ -49,25 +231,31 @@
             <div class="col-md-6">
                 <div class="project overflow-hidden" @slideFadeRight>
                     <div class="card">
-                        <img src="../../../assets/yummy.jpg" alt="" class="w-100">
+                        <img src="../../../assets/yummy.jpg" alt class="project-image">
                         <!-- <iframe
                         src="https://eslamzayed22.github.io/Yummy/"
                         width="100%" height="200px"></iframe> -->
                         <div class="card-body bg-black">
                             <h5 class="card-title text-white">Yummy</h5>
-                            <p class="card-text">"Yummy" is an online platform dedicated to sharing innovative and easy-to-follow recipes.</p>
+                            <p class="card-text">"Yummy" is an online platform
+                                dedicated to sharing innovative and
+                                easy-to-follow recipes.</p>
                             <div class="row g-1">
                                 <div class="col-4">
-                                    <p class="bg-skills text-center m-0"> JavaScript</p>
+                                    <p class="bg-skills text-center m-0">
+                                        JavaScript</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="bg-skills text-center m-0">Bootstrap</p>
+                                    <p
+                                        class="bg-skills text-center m-0">Bootstrap</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="bg-skills text-center m-0 ">Html</p>
+                                    <p
+                                        class="bg-skills text-center m-0 ">Html</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="bg-skills text-center  m-0">Css</p>
+                                    <p
+                                        class="bg-skills text-center  m-0">Css</p>
                                 </div>
                             </div>
                             <div class="links d-flex  gap-2 my-3 ">
@@ -79,7 +267,8 @@
                                 <a class="btn-main bg-red"
                                     href="https://github.com/eslamzayed22/Yummy"
                                     target="_blank"><i
-                                        class="fa-brands fa-github"></i> Source</a>
+                                        class="fa-brands fa-github"></i>
+                                    Source</a>
                             </div>
                         </div>
                     </div>
@@ -88,25 +277,32 @@
             <div class="col-md-6">
                 <div class="project overflow-hidden" @slideFadeLeft>
                     <div class="card">
-                        <img src="../../../assets/daniles.jpg" alt="" class="w-100">
+                        <img src="../../../assets/daniles.jpg" alt
+                            class="project-image">
                         <!-- <iframe
                         src="https://eslamzayed22.github.io/Daniels/"
                         width="100%" height="200px"></iframe> -->
                         <div class="card-body bg-black">
                             <h5 class="card-title text-white">Daniels</h5>
-                            <p class="card-text">"Daniels" is an online platform dedicated to sharing innovative and easy-to-follow recipes.</p>
+                            <p class="card-text">"Daniels" is an online platform
+                                dedicated to sharing innovative and
+                                easy-to-follow recipes.</p>
                             <div class="row g-1">
                                 <div class="col-4">
-                                    <p class="bg-skills text-center m-0"> JavaScript</p>
+                                    <p class="bg-skills text-center m-0">
+                                        JavaScript</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="bg-skills text-center m-0">Bootstrap</p>
+                                    <p
+                                        class="bg-skills text-center m-0">Bootstrap</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="bg-skills text-center m-0 ">Html</p>
+                                    <p
+                                        class="bg-skills text-center m-0 ">Html</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="bg-skills text-center  m-0">Css</p>
+                                    <p
+                                        class="bg-skills text-center  m-0">Css</p>
                                 </div>
                             </div>
                             <div class="links d-flex  gap-2 my-3 ">
@@ -118,7 +314,8 @@
                                 <a class="btn-main bg-red"
                                     href="https://github.com/eslamzayed22/Daniels"
                                     target="_blank"><i
-                                        class="fa-brands fa-github"></i> Source</a>
+                                        class="fa-brands fa-github"></i>
+                                    Source</a>
                             </div>
                         </div>
                     </div>
@@ -127,25 +324,32 @@
             <div class="col-md-6">
                 <div class="project overflow-hidden mb-4" @slideFadeRight>
                     <div class="card">
-                        <img src="../../../assets/mealfiy.jpg" alt="" class="w-100">
+                        <img src="../../../assets/mealfiy.jpg" alt
+                            class="project-image">
                         <!-- <iframe
                         src="https://eslamzayed22.github.io/Mealify/"
                         width="100%" height="200px"></iframe> -->
                         <div class="card-body bg-black">
                             <h5 class="card-title text-white">Mealify</h5>
-                            <p class="card-text">"Mealify" is an online platform dedicated to sharing innovative and easy-to-follow recipes. </p>
+                            <p class="card-text">"Mealify" is an online platform
+                                dedicated to sharing innovative and
+                                easy-to-follow recipes. </p>
                             <div class="row g-1">
                                 <div class="col-4">
-                                    <p class="bg-skills text-center m-0"> JavaScript</p>
+                                    <p class="bg-skills text-center m-0">
+                                        JavaScript</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="bg-skills text-center m-0">Bootstrap</p>
+                                    <p
+                                        class="bg-skills text-center m-0">Bootstrap</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="bg-skills text-center m-0 ">Html</p>
+                                    <p
+                                        class="bg-skills text-center m-0 ">Html</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="bg-skills text-center  m-0">Css</p>
+                                    <p
+                                        class="bg-skills text-center  m-0">Css</p>
                                 </div>
                             </div>
                             <div class="links d-flex  gap-2 my-3 ">
@@ -157,7 +361,8 @@
                                 <a class="btn-main bg-red"
                                     href="https://github.com/eslamzayed22/Mealify"
                                     target="_blank"><i
-                                        class="fa-brands fa-github"></i> Source</a>
+                                        class="fa-brands fa-github"></i>
+                                    Source</a>
                             </div>
                         </div>
                     </div>
@@ -166,25 +371,32 @@
             <div class="col-md-6">
                 <div class="project overflow-hidden mb-4" @slideFadeRight>
                     <div class="card">
-                        <img src="../../../assets/devfolio.jpg" alt="" class="w-100">
+                        <img src="../../../assets/devfolio.jpg" alt
+                            class="project-image">
                         <!-- <iframe
                         src="https://eslamzayed22.github.io/Mealify/"
                         width="100%" height="200px"></iframe> -->
                         <div class="card-body bg-black">
                             <h5 class="card-title text-white">Devfolio</h5>
-                            <p class="card-text">"Devfolio" is an online platform dedicated to sharing innovative and easy-to-follow recipes. </p>
+                            <p class="card-text">"Devfolio" is an online
+                                platform dedicated to sharing innovative and
+                                easy-to-follow recipes. </p>
                             <div class="row g-1">
                                 <div class="col-4">
-                                    <p class="bg-skills text-center m-0"> JavaScript</p>
+                                    <p class="bg-skills text-center m-0">
+                                        JavaScript</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="bg-skills text-center m-0">Bootstrap</p>
+                                    <p
+                                        class="bg-skills text-center m-0">Bootstrap</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="bg-skills text-center m-0 ">Html</p>
+                                    <p
+                                        class="bg-skills text-center m-0 ">Html</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="bg-skills text-center  m-0">Css</p>
+                                    <p
+                                        class="bg-skills text-center  m-0">Css</p>
                                 </div>
                             </div>
                             <div class="links d-flex  gap-2 my-3 ">
@@ -196,7 +408,8 @@
                                 <a class="btn-main bg-red"
                                     href="https://github.com/eslamzayed22/devfolio"
                                     target="_blank"><i
-                                        class="fa-brands fa-github"></i> Source</a>
+                                        class="fa-brands fa-github"></i>
+                                    Source</a>
                             </div>
                         </div>
                     </div>

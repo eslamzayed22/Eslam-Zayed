@@ -11,14 +11,14 @@ import { RouterLink } from '@angular/router';
   animations: [
       trigger('slideFadeLeft', [
         transition(':enter', [
-          style({ transform: 'translatex(-150px)', opacity: 0 }), // يبدأ من الأعلى وغير مرئي
-          animate('0.8s ease-out', style({ transform: 'translateY(0)', opacity: 1 })) // يتحرك للأسفل ويصبح مرئيًا
+          style({ transform: 'translatex(-150px)', opacity: 0 }), 
+          animate('0.8s ease-out', style({ transform: 'translateY(0)', opacity: 1 })) 
         ])
       ]),
       trigger('slideFadeRight', [
         transition(':enter', [
-          style({ transform: 'translatex(150px)', opacity: 0 }), // يبدأ من الأعلى وغير مرئي
-          animate('0.8s ease-out', style({ transform: 'translateY(0)', opacity: 1 })) // يتحرك للأسفل ويصبح مرئيًا
+          style({ transform: 'translatex(150px)', opacity: 0 }), 
+          animate('0.8s ease-out', style({ transform: 'translateY(0)', opacity: 1 }))  
         ])
       ])
     ]
